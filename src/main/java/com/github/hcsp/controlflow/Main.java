@@ -13,7 +13,6 @@ public class Main {
     public static void printPrimeNumbers() {
         int MAX = 100;
         int MIN = 1;
-
         for (int i = MIN; i <= MAX; i++) {
             boolean isPrimeNumber = true;
             for (int j = 2; j <= Math.sqrt(i) + 1 && j < i; j++) {
