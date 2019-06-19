@@ -1,5 +1,7 @@
 package com.github.hcsp.controlflow;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         printPrimeNumbers();
@@ -13,13 +15,14 @@ public class Main {
     public static void printPrimeNumbers() {
         int num;
 
-        for (num = 1;
+        for (num = 2;
              num < 100;
              num++) {
             boolean isPrime = true;
+            int j = (int) (Math.sqrt(num) + 1);
 
             for (int i = 2;
-                 i <= Math.sqrt(num) + 1;
+                 i < j;
                  i++) {
                 if (num % i == 0) {
                     isPrime = false;
