@@ -12,12 +12,14 @@ public class Main {
      */
     public static void printPrimeNumbers() {
         boolean flag ;
+        System.out.println(2);
         for (int i = 2; i < 100; i++) {
             flag =true;
-            for (int j = 2; j < Math.sqrt(i)+1; j++) {
-                if(i%j==0)
+            for (int j = 2; j <= Math.sqrt(i)+1; j++) {
+                if (i % j == 0){
                     flag = false;
-                break;
+                    break;
+                }
             }
             if(flag)
                 System.out.println(i);
